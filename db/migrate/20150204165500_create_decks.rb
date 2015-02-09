@@ -4,6 +4,8 @@ class CreateDecks < ActiveRecord::Migration
       t.string :name
       t.string :commander
       t.string :tag
+      t.belongs_to :user
+      t.timestamps
     end
   end
 end

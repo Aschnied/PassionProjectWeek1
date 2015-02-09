@@ -1,5 +1,4 @@
 class User < ActiveRecord::Base
-  def authenticate(password)
-    self.password == password
-  end
+  has_many :decks
+  has_many :cards, through: :decks
 end
