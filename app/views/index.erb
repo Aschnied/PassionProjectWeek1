@@ -1,22 +1,32 @@
-<div id="index_background">
-</div>
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <link href='http://fonts.googleapis.com/css?family=Metamorphous' rel='stylesheet' type='text/css'>
+    <link href='http://fonts.googleapis.com/css?family=Cinzel+Decorative' rel='stylesheet' type='text/css'>
+  </head>
+
+
 
 <div id="header">
-  <h1 class="index">The Command Tower</h1>
-  <p>Placeholder Text</p>
+  <h1 class="index_banner">The Command Tower</h1>
+  <p>Gather your forces!</p>
 </div>
 
-<div id="login">
-  <p>View your libraries</p>
-  <form action="/login" method="post">
-    <input type="text" name="username" placeholder="Username">
-    <br>
-    <input type="password" name="password" placeholder="Password">
-    <br>
-    <input type="submit" value="Login">
-  </form>
+<div class="box">
+  <div id="login">
+  <p>View your Libraries</p>
+    <form action="/login" method="post">
+      <input type="text" name="username" placeholder="Username">
+      <br>
+      <input type="password" name="password" placeholder="Password">
+      <br>
+      <br>
+      <input type="submit" value="Login">
+    </form>
+  </div>
 </div>
 
+<div class="box">
  <div id="signup">
   <p>New Planeswalker? Sign Up!</p>
   <form action="/signup" method="POST">
@@ -28,21 +38,30 @@
     <br>
     <input type="password" name="password" placeholder="Password">
     <br>
+    <br>
     <input type="submit" value="Create Account">
   </form>
   </div>
+</div>
 
+<div class="box">
   <div id="deck_search">
     <p>Find a Deck</p>
     <form action="/deck_search" method="post">
       <input type="text" name="deck[commander]" placeholder="Commander">
       <br>
+      <p>Or<p>
       <input type="text" name="deck[color_identity]" placeholder="Colors">
+      <br>
       <br>
       <input type="submit" value="Search">
     </form>
   </div>
+</div>
 
+<div class="box">
   <div id="recent_decks">
     <p>Recently Created Decks<p>
   </div>
+</div>
+
