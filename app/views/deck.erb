@@ -1,0 +1,9 @@
+ <div id="decks_list">
+ <% @user_decks.deck_id do |deck|%>
+  <%=deck.name%>
+  <%=deck.commander%>
+  <%=deck.user.username%>
+  <%=deck.cards%>
+<%end%>
+</div>
+

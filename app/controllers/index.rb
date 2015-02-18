@@ -2,21 +2,14 @@ get '/' do
   erb :index
 end
 
-get '/decks' do
-   @all_decks = Deck.all.reverse
-   erb :decks
-end
-
-get '/user' do
-end
-
 get '/login' do
 end
 
 post '/login' do
   user = User.find_by(username: params[:username])
   if user.password == params[:password]
-    redirect '/#{user.id}'
+    session[:user_id] = user.id
+    redirect "/users/#{user.id}"
   else
     redirect '/'
   end
@@ -30,5 +23,5 @@ post '/signup' do
   else
     redirect '/'
   end
-  redirect "/#{@user.id}"
+  redirect "/users/#{@user.id}"
 end
