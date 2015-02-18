@@ -15,7 +15,7 @@ end
 get '/decks/:id' do
   @deck = Deck.find(params[:id])
   "This is where the cards in a deck will be listed."
-  erb :view_deck
+  erb :deck
 end
 
 get '/decks/:id/edit' do
@@ -29,3 +29,7 @@ end
 delete '/decks/:id' do
   "the deck with id #{params[:id]} was just deleted!"
 end
+
+# post '/decks/:deck_id' do
+#   @deck = Deck.create(session[:user_id])
+# end

@@ -3,7 +3,7 @@
 
   <head>
      <link href='http://fonts.googleapis.com/css?family=Metamorphous' rel='stylesheet' type='text/css'>
-    <link href='http://fonts.googleapis.com/css?family=Cinzel+Decorative' rel='stylesheet' type='text/css'>
+     <link href='http://fonts.googleapis.com/css?family=Buda:300' rel='stylesheet' type='text/css'>
   </head>
 
 
@@ -14,7 +14,7 @@
 <div class="box">
   <div id="deck_create">
     <p>Create a deck</p>
-    <form action="/users/<%= @user.id %>/decks" method="post">
+    <form action="/decks/:deck_id" method="post">
     <input type="text" name="name" placeholder="Deck Name">
     <br>
     <input type="text" name="commander" placeholder="Commander">

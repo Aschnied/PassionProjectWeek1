@@ -1,3 +1,6 @@
+/** {
+  outline: 1px solid black;
+}*/
 body {
   background: url("https://adampaquettemtg.files.wordpress.com/2013/02/command-tower-12001.jpg" ) no-repeat center center fixed;
   background-size: cover;
@@ -9,11 +12,15 @@ body {
   border-radius: 10px;
   display: inline-block;
   margin-top: 130px;
-  margin-left: 50px;
+  margin-left: 110px;
   padding: 10px;
   background-color:rgba(204,219,219,0.8);
   font-weight: bold;
-  font-family: 'Cinzel Decorative', cursive;
+  font-family: 'Buda', cursive;
+}
+
+#container {
+
 }
 
 #header {
@@ -29,8 +36,6 @@ body {
   width: 90%;
   float: center;
 }
-
-.index
 
 #login {
   display: inline-block;
@@ -68,7 +73,7 @@ body {
 }
 
 #navbar {
-   text-align: center;
+  text-align: center;
   font-family: 'Metamorphous', cursive;
   font-size: 20px;
   border-radius: 20px;
